@@ -10,6 +10,8 @@
       "dev": "nodemon app.js"
 
   },
+  "engines": {
+    "node": "v16.5.0"},
   "author": "",
   "license": "ISC",
   "dependencies": {
