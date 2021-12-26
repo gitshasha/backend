@@ -34,7 +34,7 @@ app.get("/order/:payid", async (req, res) => {
     return res.status(200).json(order);
   });
 });
-
-app.listen(8000, () => {
-  console.log("listening on" + 8000);
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+  console.log("listening on" + PORT);
 });
