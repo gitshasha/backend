@@ -14,6 +14,9 @@ const instance = new Razorpay({
 app.use(cors());
 app.use(express.json());
 let resort;
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
 app.get("/order/:payid", async (req, res) => {
   const payid = req.params;
   console.log(payid);
